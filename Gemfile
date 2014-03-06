@@ -33,6 +33,9 @@ gem "devise", "~> 3.2.3"
 # Unicorn for more workers per dyno
 gem "unicorn", "~> 4.8.2"
 
+group :production do
+  gem 'rails_12factor'
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
