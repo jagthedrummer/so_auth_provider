@@ -77,4 +77,7 @@ SoAuthProvider::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # Set mailer options for devise
+  config.action_mailer.default_url_options = { :host => 'so-auth-provider.herokuapp.com' }
 end
