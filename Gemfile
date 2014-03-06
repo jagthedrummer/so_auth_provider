@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 1.2'
 # Use devise for user authentication
 gem "devise", "~> 3.2.3"
 
+# Unicorn for more workers per dyno
+gem "unicorn", "~> 4.8.2"
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
