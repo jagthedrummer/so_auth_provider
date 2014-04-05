@@ -33,6 +33,9 @@ gem "devise", "~> 3.2.3"
 # Unicorn for more workers per dyno
 gem "unicorn", "~> 4.8.2"
 
+# OAuth2 provider
+gem 'doorkeeper', '~> 1.1.0'
+
 group :production do
   gem 'rails_12factor'
 end
