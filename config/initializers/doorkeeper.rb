@@ -65,8 +65,7 @@ Doorkeeper.configure do
   # so that the user skips the authorization step.
   # For example if dealing with trusted a application.
    skip_authorization do |resource_owner, client|
-     # true # for now we don't have any un-trusted apps
-     #client.superapp? or resource_owner.admin?
+     true # We're only supporting trusted apps.
    end
 
   # WWW-Authenticate Realm (default "Doorkeeper").
