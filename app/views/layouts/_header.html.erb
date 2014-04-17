@@ -1,7 +1,8 @@
 <div class="header">
   <h1>So Auth!  Much provider!</h1>
+  <%= link_to "Client", ENV['SO_AUTH_CLIENT_URL'] %>
   <% if user_signed_in? %>
-    <%= link_to "Sign Out", "/users/sign_out", :method => :delete %>
+    | <%= link_to "Sign Out", "/users/sign_out", :method => :delete %>
   <% end %>
   <hr />
 </div>

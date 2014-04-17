@@ -12,16 +12,10 @@ class Oauth::SessionsController < Devise::SessionsController
     end
   end
 
-  def env_domain_settings
-    {
-      "development" => "localhost",
-      "test" => "localhost",
-      "production" => ".herokuapp.com"
-    }
-  end
 
   def env_domain
-    domain = env_domain_settings[Rails.env]
+    domain = ENV['COOKIE_DOMAIN'] || 'localhost'
+    Rails.logger.error("trying to set cookie for #{domain}")
     domain == "localhost" ? :all : domain
   end
 

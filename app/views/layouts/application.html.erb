@@ -15,8 +15,8 @@
   <% end %>
 
   <%= yield %>
-
+  <br/>
   You might be interested in the super secret content at the 
-  <%= link_to "So Auth Client Site", "http://so-auth-client.herokuapp.com/" %>
+  <%= link_to "So Auth Client Site", ENV['SO_AUTH_CLIENT_URL'] %>
 </body>
 </html>
