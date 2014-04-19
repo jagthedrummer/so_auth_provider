@@ -1,8 +1,9 @@
 <div class="header">
-  <h1>So Auth!  Much provider!</h1>
-  <%= link_to "Client", ENV['SO_AUTH_CLIENT_URL'] %>
+  <%= link_to image_tag('oauth_logo.png'), root_path %>
+  <h1><%= link_to "So Auth!  Much provider!", root_path %></h1>
+  <h2><%= link_to "Go to the Client", ENV['SO_AUTH_CLIENT_URL'] %></h2>
   <% if user_signed_in? %>
-    | <%= link_to "Sign Out", "/users/sign_out", :method => :delete %>
+    <h2>|</h2> <h2><%= link_to "Sign Out", "/users/sign_out", :method => :delete %></h2>
   <% end %>
   <hr />
 </div>

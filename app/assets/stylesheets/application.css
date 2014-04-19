@@ -11,3 +11,19 @@
  *= require_self
  *= require_tree .
  */
+
+
+body{
+  font-size:1.5em;
+}
+
+.header img{
+  float:left;
+  width:120px;
+  margin-right:10px;
+  
+}
+
+.header h2{
+  display:inline;
+}
