@@ -1,6 +1,9 @@
 SoAuthProvider::Application.routes.draw do
   use_doorkeeper
-  devise_for :users, :controllers => {:sessions => "oauth/sessions"}
+  devise_for :users, :controllers => {
+    :sessions => "oauth/sessions",
+    :registrations => "oauth/registrations"
+  }
   get "oauth/me" => "oauth/users#me"
   
   root 'home#index'
