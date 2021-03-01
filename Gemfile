@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
-ruby '2.2.10'
+ruby '2.5.8'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.3'
+gem 'rails', '4.2.11.3'
+gem 'responders', '~> 2.0'
+
 
 # Use postgresql as the database for Active Record
 gem 'pg'
@@ -28,13 +30,17 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 # Use devise for user authentication
-gem "devise", "~> 3.2.3"
+gem "devise", "~> 3.2"
 
 # Unicorn for more workers per dyno
 gem "unicorn", "~> 4.8.2"
 
 # OAuth2 provider
 gem 'doorkeeper', '~> 1.1.0'
+
+group :development do
+  gem 'foreman'
+end
 
 group :production do
   gem 'rails_12factor'
