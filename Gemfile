@@ -40,7 +40,7 @@ gem 'devise', git: 'https://github.com/plataformatec/devise' , branch: '3-stable
 gem "unicorn", "~> 4.8.2"
 
 # OAuth2 provider
-gem 'doorkeeper', '~> 1.1.0'
+gem 'doorkeeper', '~> 4.4.0'
 
 group :development do
   gem 'foreman'
