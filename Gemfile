@@ -30,7 +30,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 # Use devise for user authentication
-gem "devise", "~> 3.2"
+#gem "devise", "~> 3.2"
+# We're using this branch because of a bug between ruby 2.5 and devise
+# https://github.com/heartcombo/devise/issues/4630#issuecomment-510309956
+# Thanks, Wes!
+gem 'devise', git: 'https://github.com/plataformatec/devise' , branch: '3-stable'
 
 # Unicorn for more workers per dyno
 gem "unicorn", "~> 4.8.2"
