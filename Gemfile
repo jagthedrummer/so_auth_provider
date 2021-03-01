@@ -30,7 +30,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 # Use devise for user authentication
-gem "devise", "~> 3.2"
+gem "devise", "~> 4.7"
 
 # Unicorn for more workers per dyno
 gem "unicorn", "~> 4.8.2"
